@@ -1,0 +1,194 @@
+/* ---------- Global Reset and Base Styles ---------- */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+/* ---------- Custom Font ---------- */
+
+@font-face {
+  font-family: "Nike";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./font/FuturaStdExtraBoldCondensed.woff2") format("woff2");
+}
+
+/* ---------- Variable Declaration ---------- */
+
+:root {
+  /* ---- color ---- */
+  --bg-primary: #ffffff; /* primary background color */
+  --bg-secondary: #f5f5f5; /* secondary background color */
+
+  --bg-hover: #cccccc;
+
+  --color-primary: rgb(17, 17, 17); /* primary text color */
+  --color-secondary: #757575; /* secondary text color */
+
+  /* ---- font family ---- */
+  --ff-primary: Arial, Helvetica, sans-serif;
+  --ff-hero: Helvetica;
+
+  /* ---- font size ---- */
+  --fs-s: 0.75rem; /* 12px; */
+  --fs-m: 1rem; /* 16px; */
+  --fs-x: 1.25rem; /* 20px; */
+  --fs-xl: 1.5rem; /* 24px */
+  --fs-xxl: 69px;
+}
+
+/* ---------- Container Styles ---------- */
+
+.container {
+  width: 94%;
+  margin: auto;
+  padding: 0 3px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* ---------- Banner for Latest Offer Styles ---------- */
+
+.banner-wrapper {
+  background-color: var(--bg-secondary);
+  height: 3.625rem;
+  padding-top: 0.625rem;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.3);
+  text-align: center;
+  font-weight: 500;
+}
+
+.banner-wrapper span,
+.banner-wrapper a,
+.banner-wrapper a u {
+  color: var(--color-primary);
+}
+
+.banner-wrapper span {
+  font-size: var(--fs-m);
+}
+
+.banner-wrapper a u {
+  font-size: var(--fs-s);
+  line-height: 2;
+  font-weight: 500;
+}
+.banner-wrapper a {
+  font-size: var(--fs-s);
+  line-height: 2;
+  font-weight: 400;
+}
+
+/* ---------- Main Display Styles ---------- */
+
+.main-display {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-display__img-wrapper {
+  width: 100%;
+  height: max-content;
+}
+
+.hero__img-pc {
+  width: 100%;
+}
+
+.hero__img-mob {
+  display: none;
+}
+
+ /* ------ Main Text Content Section ---------- */
+
+.main-display__content-wrapper {
+  margin: 2.5rem 0;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.main-display__content-wrapper span {
+  font-size: var(--fs-m);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text {
+  font-family: "Nike", Arial, sans-serif;
+  font-size: var(--fs-xxl);
+  line-height: 3.8rem;
+  letter-spacing: -2px;
+  margin-bottom: 2rem;
+}
+
+/* .main-display__content-wrapper p{
+  max-width: 70ch;
+} */
+
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: var(--color-primary);
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--bg-primary);
+}
+
+/* ---------- Responsive Styles for Smaller Screens ---------- */
+
+@media screen and (max-width: 600px) {
+  .hero__img-pc {
+    display: none;
+  }
+
+  .hero__img-mob {
+    display: block;
+    width: 100%;
+  }
+
+  /* ------ Main Text Content Section ---------- */
+  .main-display__content-wrapper {
+    margin: 1.6rem 0;
+    text-align: start;
+  }
+
+  .hero-text {
+    font-size: 46px;
+    line-height: 2.6rem;
+    letter-spacing: -2px;
+    margin-bottom: 1.6rem;
+  }
+  br {
+    display: none;
+  }
+  .main-display__content-wrapper p {
+    line-height: 1.5rem;
+    max-width: 34ch;
+  }
+  .btn {
+    margin-top: 1.6rem;
+  }
+}
