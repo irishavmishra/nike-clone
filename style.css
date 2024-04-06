@@ -106,27 +106,26 @@ a:active {
 .main-display {
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 4.5rem;
+} 
+
+.section-title{
+  font-size: var(--fs-xl);
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
-.main-display__img-wrapper {
+.main-display__img-wrapper img {
   width: 100%;
-  height: max-content;
 }
 
-.hero__img-pc {
-  width: 100%;
-}
-
-.hero__img-mob {
-  display: none;
-}
 
  /* ------ Main Text Content Section ---------- */
 
 .main-display__content-wrapper {
   margin: 2.5rem 0;
   text-align: center;
-  color: var(--color-primary);
+      
 }
 
 .main-display__content-wrapper span {
@@ -160,15 +159,6 @@ a:active {
 /* ---------- Responsive Styles for Smaller Screens ---------- */
 
 @media screen and (max-width: 600px) {
-  .hero__img-pc {
-    display: none;
-  }
-
-  .hero__img-mob {
-    display: block;
-    width: 100%;
-  }
-
   /* ------ Main Text Content Section ---------- */
   .main-display__content-wrapper {
     margin: 1.6rem 0;
@@ -177,7 +167,7 @@ a:active {
 
   .hero-text {
     font-size: 46px;
-    line-height: 2.6rem;
+    line-height: 2.4rem;
     letter-spacing: -2px;
     margin-bottom: 1.6rem;
   }

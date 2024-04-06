@@ -36,21 +36,30 @@
 
     <!-- Main Content Section -->
     <main>
+      <!-------------- 1 img section ------------------------>
       <div class="main-display">
         <div class="container">
           <div class="main-display__img-wrapper">
-            <img
-              src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/w_1119,c_limit/5b67cda3-a72e-4059-8656-1d102813f808/nike-just-do-it.jpg"
-              alt="NIKE just do it"
-              class="hero__img-pc"
-            />
-            <img
-              src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_459,c_limit/9596f62e-31b2-47e5-9d1f-cb95bbeb240d/nike-just-do-it.jpg"
-              alt="NIKE just do it"
-              class="hero__img-mob"
-            />
+            <picture>
+              <source
+                media="(min-width: 601px )"
+                srcset="
+                  https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/w_1119,c_limit/5b67cda3-a72e-4059-8656-1d102813f808/nike-just-do-it.jpg
+                "
+              />
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_459,c_limit/9596f62e-31b2-47e5-9d1f-cb95bbeb240d/nike-just-do-it.jpg
+                "
+              />
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/w_1119,c_limit/5b67cda3-a72e-4059-8656-1d102813f808/nike-just-do-it.jpg"
+                alt="NIKE just do it"
+              />
+            </picture>
           </div>
-             <!-- Main Text Content Section -->
+          <!-- Main Text Content Section -->
           <div class="main-display__content-wrapper">
             <span>Nike Training</span>
             <h3 class="hero-text">
@@ -60,8 +69,75 @@
             </h3>
             <p>
               No matter what your workout looks like today or tomorrow, we've
-              got <br> the go-to essentials to make every movement count.
+              got <br />
+              the go-to essentials to make every movement count.
             </p>
+            <a href="#" class="btn">Shop</a>
+          </div>
+        </div>
+      </div>
+
+      <!-------------- just in section ------------------------>
+      <div class="main-display">
+        <div class="container">
+          <h2 class="section-title">Just In</h2>
+          <div class="main-display__img-wrapper">
+            <picture>
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_1945,c_limit/b165c418-4f83-4cd2-82b7-91a9c4251a6c/nike-just-do-it.jpg
+                "
+              />
+              <source
+                media="(max-width)"
+                srcset="
+                  https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_459,c_limit/86562b83-ba84-485a-bde1-d845b38feac6/nike-just-do-it.jpg
+                "
+              />
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_1945,c_limit/b165c418-4f83-4cd2-82b7-91a9c4251a6c/nike-just-do-it.jpg"
+                alt="NIKE just do it"
+                class="hero__img-pc"
+              />
+            </picture>
+          </div>
+          <!-- Main Text Content Section -->
+          <div class="main-display__content-wrapper">
+            <h3 class="hero-text">
+              CHECK THE <br />
+              FOOTWORK IN <br />
+              THE ZOOM FREAK 5 <br />
+              'MADE IN SEPOLIA'
+            </h3>
+            <p>
+              Lively street art and global football roots inspire Giannis'
+              latest colourway.
+            </p>
+            <a href="#" class="btn">Shop</a>
+          </div>
+        </div>
+        <!-- End container -->
+      </div>
+      <!-------------- Don't Miss section ------------------------>
+      <div class="main-display">
+        <div class="container">
+          <h2 class="section-title">Don't Miss</h2>
+          <div class="main-display__img-wrapper">
+            <picture>
+              <source media="(min-width: 601px)" srcset="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1423,c_limit/dfc2f055-541d-4fa2-baf3-f4bfd71c71be/nike-just-do-it.jpg">
+              <source media="(max-width: 600px)" srcset="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_459,c_limit/2217fc92-2554-49a6-af7c-5632030af6cf/nike-just-do-it.jpg">
+              <img
+                src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1423,c_limit/dfc2f055-541d-4fa2-baf3-f4bfd71c71be/nike-just-do-it.jpg"
+                alt="NIKE just do it"
+                class="hero__img-pc"
+              />
+            </picture>
+          </div>
+          <!-- Main Text Content Section -->
+          <div class="main-display__content-wrapper">
+            <h3 class="hero-text">THE WORLD RUNS IN PEGASUS</h3>
+            <p>For any run, for everyone. Nike Pegasus 40.</p>
             <a href="#" class="btn">Shop</a>
           </div>
         </div>
